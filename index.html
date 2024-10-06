@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yulduzcha Bog'chasi</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- lightgallery css cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- website favicon link -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-school"></i> Bog'cha</a>
+
+        <nav class="navbar">
+            <a href="#home">Asosiy</a>
+            <a href="#about">Biz haqimizda</a>
+            <a href="#education">Ta'lim</a>
+            <a href="#teacher">Ustozlar</a>
+            <a href="#activities">Mashg'ulotlar</a>
+            <a href="#gallery">Rasmlar</a>
+            <a href="#contact">Aloqa</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">click here</a> </p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Bizning <span>Yulduzcha</span> nomli bog'chamizga xush kelibsiz</h3>
+            <p>Bizning bog'chamiz hali yangi, ammo yangi bo'lishiga qaramasdan <span id="myElement"
+                    style="display: none;">ichida barcha qulayliklar va sharoitlar bor tarbiyachilarimiz ham juda
+                    yaxshi. Oylik to'lov 500 ming so'm</span></p>
+            <a id="toggleButton" onclick="toggleElement()" class="btn">Ko'proq Ma'lumot</a>
+        </div>
+
+        <div class="image">
+            <img src="images/home.png" alt="">
+        </div>
+
+        <div class="custom-shape-divider-bottom-1684324473">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about us section starts -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>Biz</span> haqimizda</h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/about us.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Birgalikda kashf qilish, o'sish va rivojlanish</h3>
+                <p>Darsimiz 8:00 da boshlanadi, soat 8:10 dan 8:30 gacha ertalabki badantarbiya bo'ladi undan keyin 8:30 dan 9:00 gacha ertalabki nonushta, soat 9:00 dan 9:30 gacha ona-tili(harflar) keyin esa 9:30 dan 10:00 gacha mental arifmetika to'garagi, <span id="Element" style="display: none;">o'ynash turli-xil mashqlar va qiziqarli, aqlni charxlovchi o'yinlar 10:00 dan 11:00 gacha, 11:00 dan 12:00 gacha taekwando bilan shug'ullanadi, 12:00 dan 12:30 gacha tushlik, ovqatlanish, keyin esa 12:30 dan 14:30 gacha uxlash, dam olish, 14:30 dan 15:30 gacha o'yin guruh bilan, 2-tushlik yeyish uchun narsalar 15:30 dan 16:00 gacha, ta'lim va tarbiya 16:00 dan 17:00 gacha. Bog'cha tugadi javob 15:00 - 15:30.</span></p>
+                <a id="Button" onclick="Element()" class="btn">Ko'proq Ma'lumot</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about us section ends -->
+
+    <!-- education section start -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading">Bizning <span> ta'lim</span></h1>
+
+        <div class="box-container">
+
+            <div class="box ">
+                <h3>Ona tili</h3>
+                <p>Harflarni va alifbeni o'rganatiladi, darslar juda qiziqarli o'tiladi</p>
+                <img src="images/education1.png" alt="">
+            </div>
+
+            <div class="box">
+                <h3>Sport mashqlari</h3>
+                <p>Sport mashg'ulotlarida taekwando sporti o'gatiladi, chunki taekwando xavfli sport turi emas.</p>
+                <img src="images/education2.png" alt="">
+            </div>
+
+            <div class="box">
+                <h3>Rasmlar chizish</h3>
+                <p>Bu paytda odatda bolalar o'zlari xohlagan narsaning rasmini chizishadi.</p>
+                <img src="images/education3.png" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+    <!-- teacher section starts -->
+
+    <section class="teacher" id="teacher">
+
+        <h1 class="heading">Bizning <span> O'qituvchilarimiz</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/teacher1.png" alt="">
+                <h3>john wright</h3>
+                <p>Ona tili ustoz</p>
+                <div class="share">
+                    <a href="https://t.me/ModGames7" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/jam.mah2012/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/teacher2.png" alt="">
+                <h3>john wright</h3>
+                <p>Tarbiyachi</p>
+                <div class="share">
+                    <a href="https://t.me/ModGames7" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/jam.mah2012/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/teacher3.png" alt="">
+                <h3>john wright</h3>
+                <p>Mental arifmetika ustoz</p>
+                <div class="share">
+                    <a href="https://t.me/ModGames7" target="_blank"><i class="fab fa-telegram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/jam.mah2012/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- teacher section ends -->
+
+    <!-- activities section starts -->
+
+    <section class="activities" id="activities">
+
+        <h1 class="heading">Bizning <span>Mashg'ulotlar</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/activities1.png" alt="">
+                <h3>Harflarni o'rgan</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/activities2.png" alt="">
+                <h3>O'yinchoqlar</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/activities3.png" alt="">
+                <h3>Qiziqarli Darslar</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/activities4.png" alt="">
+                <h3>O'yinlar o'ynash</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/activities5.png" alt="">
+                <h3>Mental arifmetika</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/activities6.png" alt="">
+                <h3>turli-xil o'yinlar</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/activities7.png" alt="">
+                <h3>Rasm chizish</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/activities8.png" alt="">
+                <h3>Qiziqarli topshiriqlar</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- activities section ends -->
+
+    <!-- gallery section starts -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">Bizning <span>Rasmlar</span></h1>
+
+        <div class="gallery-container">
+
+            <a href="images/gallery-1.jpg" class="box">
+                <img src="images/gallery-1.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="images/gallery-2.jpg" class="box">
+                <img src="images/gallery-2.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="images/gallery-3.jpg" class="box">
+                <img src="images/gallery-3.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="images/gallery-4.jpg" class="box">
+                <img src="images/gallery-4.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="images/gallery-5.jpg" class="box">
+                <img src="images/gallery-5.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+
+            <a href="images/gallery-6.jpg" class="box">
+                <img src="images/gallery-6.jpg" alt="">
+                <div class="icon"> <i class="fas fa-plus"></i></div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>Biz bilan</span> Aloqa</h1>
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-clock"></i>
+                <h3>Ochiq bo'ladi :</h3>
+                <p>Duhanba - Juma: 8:00 dan 17:00 gacha</p>
+                <p>Shanba: 09:00 dan 16:00 gacha</p>
+            </div>
+
+            <div class="icons">
+                <i class="fab fa-telegram"></i>
+                <h3>Telegram</h3>
+                <p>Guruh: <a target="_blank" href="https://t.me/Yulduzcha1702">@Yulduzcha1702</a></p>
+                <p>Lichka: <a target="_blank" href="https://t.me/Mahmud1702">@Mahmud1702</a></p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>Telefon Raqam</h3>
+                <p><a target="_blank" href="tel:+998914121477">+998 91-412-14-77</a></p>
+                <p><a target="_blank" href="tel:+998914121477">+998 93-458-14-77</a></p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact.gif" alt="">
+            </div>
+
+            <form action="">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="Ismingiz">
+                    <input type="email" placeholder="Emailingiz">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Telefon raqam">
+                    <input type="text" placeholder="Manzilingiz">
+                </div>
+                <textarea placeholder="Izoh uchun" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> <i class="fas fa-school"></i> Yulduzcha </h3>
+                <p>Bog'chamiz manzili:</p>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d540.2851362608!2d64.39637825791449!3d39.79481891458436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2s!4v1728224906370!5m2!1sru!2s" width="220" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"> <i class="fas fa-caret-right"></i> enroll now</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> parent portal</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> school calendar</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> lunch menu</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> school supply list</a>
+            </div>
+
+            <div class="box">
+                <h3>category</h3>
+                <a href="#"> <i class="fas fa-caret-right"></i> about us</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> academics</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> admissions</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> news & events</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> contact us</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-caret-right"></i> privacy policy</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> terms of use</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> site map</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> FAQs</a>
+                <a href="#"> <i class="fas fa-caret-right"></i> accessibility statement</a>
+            </div>
+
+        </div>
+
+        <div class="credit"> &copy; copyright @ 2024 by <span>Jamolov Mahmud</span></div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- lightgallery cdn js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+    <script>
+        lightGallery(document.querySelector('.gallery .gallery-container'));
+    </script>
+
+</body>
+
+</html>
